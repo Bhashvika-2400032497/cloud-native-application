@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Welcome</title>
-</head>
-<body>
-    <h1>Welcome to My Web App!</h1>
-</body>
-</html>
+FROM httpd
+COPY index.html /usr/local/apache2/htdocs/
+EXPOSE 80
